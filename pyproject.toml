@@ -20,8 +20,6 @@ authors = [
 dependencies = [
     "numpy",
     "scipy",
-    "dynesty",
-    "pathos",
 ]
 
 [tool.setuptools.packages.find]
