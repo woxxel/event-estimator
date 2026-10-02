@@ -28,3 +28,4 @@ include = ["event_estimator*"]
 
 [tool.setuptools_scm]
 version_file = "event_estimator/_version.py"
+local_scheme = "no-local-version"
