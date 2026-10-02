@@ -1,0 +1,32 @@
+[build-system]
+requires = [
+    "setuptools>=77.0.3",
+    "setuptools-scm>=8",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "event-estimator"
+dynamic = ["version"]
+description = "Event estimation from deconvolved calcium traces"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+
+authors = [
+    { name = "Alexander Schmidt" }
+]
+
+dependencies = [
+    "numpy",
+    "scipy",
+    "dynesty",
+    "pathos",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["event_estimator*"]
+
+[tool.setuptools_scm]
+version_file = "event_estimator/_version.py"
